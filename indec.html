@@ -69,31 +69,70 @@
 
             </div>
 
-            
+
         </div>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <footer>
             <span>Created By <a href="https://www.linkedin.com/in/mukhsinjon-bokijonov-860491200/">Bokijonov Mukhsinjon</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
         </footer>
+        <style>
+            .backgroundChange{
+                background-color: aqua;
+            }
+            .amazonLink{
+                color: red;
+            }
+            .imageVisibility{
+                visibility: hidden;
+            }
+            .htmlStyle {
+            color: orange;
+            border-radius: 6px;
+            border-width: 2px;
+            border-color: orange;
+            border-style: solid;
+            padding: 4px;
+            }
+            .changePriceColor{
+                color: red; 
+            }
+
+        </style>
+
+        <script type="text/javascript">
+
+
+
+            const changeH1 = function() {
+              let headerToChange = document.querySelector("h1")
+              headerToChange.innerHTML = "Welcome to ProShop"
+            }
+          
+            const changeBodyBackground = function() {
+              let bodyToBeChanged = document.querySelector("body")
+              bodyToBeChanged.style.backgroundColor = "backgroundChange"
+            }
+          
+            const changingTheAddress = function() {
+              let footerAddress = document.querySelector("footer p")
+              footerAddress.innerHTML = "Fake street 101"
+            }
+          
+            const addClassToLink = function() {
+              // works on one and not all
+              let everyLink = document.querySelector("a") 
+               everyLink.classList.add("amazonLink");
+            }
+            const changeImageVisibility = function(){
+                let imageVisibility = document.querySelector("img")
+                imageVisibility.classList.toggle("imageVisibility")
+
+            }
+            const changePriceColor = function(){
+                let priceColor = document.querySelector("td")
+                priceColor.classList.add("changePriceColor")
+            }
+          
+            </script>
     </body>
 </HTML>
