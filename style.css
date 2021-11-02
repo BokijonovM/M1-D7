@@ -1,3 +1,39 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 4px;
+} 
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+td, img{
+    width: 35%;
+    height: 35%;
+}
+.message-me{
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    border-color: #b3b3b3;
+    padding-top: 10px;
+    resize: none;
+
+}
+.name-field{
+    width: 45px;
+    height: 55px;
+
+}
+
+
 footer{
     background: #111;
     padding: 15px 23px;
