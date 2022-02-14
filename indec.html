@@ -94,6 +94,9 @@
             padding: 4px;
             }
             .changePriceColor{
+                background-color: red;
+                text-align: center;
+                size: 25px;
                 color: red; 
             }
 
@@ -104,7 +107,7 @@
 
 
             const changeH1 = function() {
-              let headerToChange = document.querySelector("h1")
+              let headerToChange = document.getElementById("shop-title")
               headerToChange.innerHTML = "Welcome to ProShop"
             }
           
@@ -120,12 +123,12 @@
           
             const addClassToLink = function() {
               // works on one and not all
-              let everyLink = document.querySelectorAll("a") 
+              let everyLink = document.querySelector("a") 
                everyLink.classList.add("amazonLink");
             }
             const changeImageVisibility = function(){
                 let imageVisibility = document.querySelector("img")
-                imageVisibility.classList.toggle("imageVisibility")
+                imageVisibility.classList.add("imageVisibility")
 
             }
             const changePriceColor = function(){
